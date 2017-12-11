@@ -16,7 +16,7 @@ namespace ConsoleApp10
             Random randomize = new Random();
             for(int i=0;i<size;i++)
             {
-                list.Add(randomize.Next() % 100);
+                list.Add(randomize.Next() % 10);
                 if(i%2==0)
                 {
                     sum += list[i];
@@ -42,6 +42,7 @@ namespace ConsoleApp10
             }
             Console.WriteLine("max = "+max);
             Console.WriteLine("max2 = " + max2);
+            Console.WriteLine("sum = " + sum);
             Console.ReadLine();
         }
     }
